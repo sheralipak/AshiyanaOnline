@@ -1,0 +1,105 @@
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../assets/signup.jpg');
+    background-color: rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wrapper {
+    height: 75vh; /* Increased height */
+    width: 35vw; /* Increased width */
+    border-radius: 30px; /* Larger border radius */
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Added box shadow for depth */
+}
+
+.wrapper > h2 {
+    color: #171097;
+    text-align: center;
+    margin: 3rem 0; /* Increased margin */
+    font-size: 42px; /* Increased font size */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; /* Increased gap between form elements */
+}
+
+form > input {
+    width: 60%; /* Increased input width */
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #333;
+}
+
+form > label {
+    align-self: center;
+    width: 60%; /* Increased label width */
+    cursor: pointer;
+    transition: 150ms all;
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Increased gap */
+}
+
+form > label:hover {
+    color: #444;
+    shape-outside: margin-box;
+}
+
+form > button {
+    outline: none;
+    background-color: blue;
+    color: #fff;
+    border-radius: 12px;
+    padding: 0.75rem 1.5rem; /* Increased padding */
+    font-size: 20px; /* Increased font size */
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+form > button:hover {
+    background-color: #fff;
+    border-color: blue;
+    color: blue;
+}
+
+form > p {
+    text-align: center;
+    color: black;
+    font-size: 18px; /* Increased font size */
+    margin-top: 2rem; /* Adjusted margin top */
+}
+
+form > p > a {
+    text-decoration: none;
+    color: #171097;
+}
+
+.error {
+    height: 70px;
+    width: 250px;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #f00;
+    color: #fff;
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+    font-weight: 500;
+}
